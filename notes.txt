@@ -1,0 +1,78 @@
+- Scuttlebutt: A p2p social network.
+
+Slide 1 (Contents):
+
+- What / how / why?
+
+- Some applications built on the protocol.
+
+- Lowish level API demo.
+
+- Future Work
+
+Slide 2 (What?)
+
+- A protocol for building a p2p social network. Different clients.
+- No central companies or servers. Data lives on the machines of the users (more about how later.)
+-- Can survive as long as there are computers and they can talk using TCP/IP (LAN / internet.) - how next
+
+Slide 4 (Why?)
+
+- Picture of peer 2 peer architecture.
+
+- User freedom.
+
+- Freedom of speech. No central servers that can be shut down / users can be banned from.
+
+- Freedom to choose how you listen.
+-- Facebook / Twitter do not allow alternative clients. Try to optimise for ad revenue.
+-- Choose how information is displayed. Choose what information you see.
+
+- No advertisements.
+
+- Preparation for the zombie apocolypse :P
+- Preparation for mars colony :P (minutes)
+
+Slide 3 (How?)
+
+- Identity is public + private key pair.
+- Each computer stores the messages of friends + their friends on the hard drive.
+- Gossip protocol (demonstration with people acting like clients) to update each other of what messages they have.
+- Pubs to remember what your friend said while you were offline / get around NATs.
+
+- Open source / no business: Grants and volunteer work.
+
+Slide 5 (Applications Demo)
+
+Cover:
+
+Patchwork (an electron app.):
+- Messages available offline (on hard disk)
+- Pictures and files are more 'as needed' / fuzzy.
+- Channels (actually more like hashtags on twitter)
+
+- Profiles (subjectivity of 'about')
+
+Patchbay:
+- Scuttlebutt is just a protocol for replicating messagges. Different clients can be build.
+- Applications: books, chess, (git ssb web.) / more tabbed approach.
+
+Slide 6 (Lowish level application stack demo.)
+
+- Picture of pipeline I'm going to build.
+- Mention that are more efficient ways to do this sort of thing (indexes, etc.)
+- pull-streams (create User Stream)
+
+Slide 7 (Future Work)
+
+- Mobie applications + mobile + shared identity.
+
+- Mobile mesh network :D
+
+- Efficient gossip protocol.
+
+- UX experience + documentation.
+
+Slide 8:
+
+Questions?!

@@ -1,0 +1,15 @@
+{
+  "name": "glasgow-js-ssb-talk",
+  "version": "1.0.0",
+  "description": "Material for a talk at the Glasgow JavaScript meetup on scuttlebutt (a peer 2 peer social network.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gordon Martin",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "pull-stream": "^3.6.1",
+    "ssb-client": "^4.5.2"
+  }
+}
