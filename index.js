@@ -62,8 +62,6 @@ ssbClient((err, sbot) => {
        pull.reduce(addToLikesCount, {}, (err, result) => {
           var entries = Object.entries(result);
           var sorted = entries.sort( (first, second) => {
-            console.log(first);
-            console.log(second);
             return first[1] < second[1] ? 1 : -1
           });
 
