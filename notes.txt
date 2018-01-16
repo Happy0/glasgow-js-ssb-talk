@@ -58,7 +58,7 @@ Patchbay:
 - Applications: books, chess, (git ssb web.) / more tabbed approach.
 
 Slide 6 (Lowish level application stack demo.)
-
+- Question: whose posts do I like on scuttlebutt most often?
 - Picture of pipeline I'm going to build.
 - Mention that are more efficient ways to do this sort of thing (indexes, etc.)
 - pull-streams (create User Stream)
