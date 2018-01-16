@@ -59,7 +59,17 @@ ssbClient((err, sbot) => {
     //  ));
 
     pull(authorLikesStream,
-       pull.reduce(addToLikesCount, {}, (err, result) => console.log(result)
+       pull.reduce(addToLikesCount, {}, (err, result) => {
+          var entries = Object.entries(result);
+          var sorted = entries.sort( (first, second) => {
+            console.log(first);
+            console.log(second);
+            return first[1] < second[1] ? 1 : -1
+          });
+
+          console.log(sorted.slice(0,20));
+          process.exit(0);
+      }
      ));
 
   });
