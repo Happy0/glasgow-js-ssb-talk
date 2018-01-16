@@ -12,10 +12,16 @@ function isLikeMsg(msg) {
 
 function addToLikesCount(likesDict, author) {
   if (likesDict[author]) {
-    likesDict[author] = likesDict + 1;
+    likesDict[author] = likesDict[author] + 1;
   } else {
     likesDict[author] = 1;
   }
+
+  return likesDict;
+}
+
+function authorDisplayName(authorId) {
+
 }
 
 function likeMsgAuthorThrough(sbot) {
@@ -48,8 +54,12 @@ ssbClient((err, sbot) => {
     let userLikeStream = getUserLikesStream(sbot, ident);
     let authorLikesStream = pull(userLikeStream, likeMsgAuthorThrough(sbot));
 
+    // pull(authorLikesStream,
+    //    pull.reduce((count, author) => count + 1, 0, (err, result) => console.log("count: " + result)
+    //  ));
+
     pull(authorLikesStream,
-       pull.reduce((count, author) => count + 1, 0, (err, result) => console.log("count: " + result)
+       pull.reduce(addToLikesCount, {}, (err, result) => console.log(result)
      ));
 
   });
